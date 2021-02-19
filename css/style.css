@@ -1,0 +1,177 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+ /* Regole generali testi */
+.bgsponsorgrey{
+  background: rgb(243, 245, 249);
+}
+
+.text_center{
+  text-align: center;
+}
+
+
+/* Regole Sponsor */
+section h3 {
+  text-transform: uppercase;
+  color: grey;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contenitore{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.contenitore a{
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.sponsor_img{
+  display: flex;
+  justify-content: center;
+
+}
+
+.sponsor_img img{
+  width: calc((100% / 6) - 4px);
+  padding: 10px;
+}
+
+
+/* Regole Deploy */
+section h2{
+  color: rgb(3, 27, 78);
+  padding-top: 35px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.titolodeploy p{
+  margin: 15px 0 40px 0;
+  color: #5c6a88;
+}
+
+.content_deploy{
+  display: flex;
+  width: 100%;
+}
+
+.content_deploy_sx{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.content_deploy_sx ul li{
+  list-style: none;
+  padding: 10px 0 20px 10px;
+  border-left: 2px solid #e5e8ed;
+}
+
+.content_deploy_sx a{
+  font-weight: bold;
+  color: rgba(3, 27, 78, 0.6);
+}
+
+.content_deploy_dx{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content_deploy_dx p {
+  color: #5c6a88;
+}
+
+.box{
+  width: 50%;
+  padding: 0 20px 20px 0;
+}
+
+.box h4 {
+  padding: 10px 0;
+}
+
+/* Regole Features */
+.features {
+  margin-top: 50px;
+  height: auto;
+  background-color: #F5F5F5;
+  width: 100%;
+}
+
+.contfeatures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.boxfeat {
+  padding: 30px 0;
+  width: 30%;
+}
+
+.boxfeat h4 {
+  padding: 10px 0;
+}
+
+.boxfeat p {
+  color: #5c6a88;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px){
+
+  .sponsor_img{
+    flex-wrap: wrap;
+  }
+
+  .sponsor_img img{
+    width: calc(50% - 4px);
+    max-height: 150px;
+  }
+
+  .content_deploy_sx{
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+
+ .content_deploy, .content_deploy_dx{
+   display: block;
+   width: 100%;
+ }
+
+ .content_deploy_dx, .content_deploy_sx{
+   padding-left: 20px;
+ }
+
+ .titolodeploy p{
+   padding: 10px;
+ }
+
+  .contfeatures {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .box{
+    width: 90%;
+  }
+
+  .boxfeat {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+}
